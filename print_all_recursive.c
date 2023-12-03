@@ -13,7 +13,9 @@ print all binary numbers of a given length;
 #include <stdlib.h>
 
 void print_binary_recursive(char *p, int n) {
-    if (n == 0) {
+    if (n == 1) {
+        printf("%s\n", p);
+        p[n-1] = '1';
         printf("%s\n", p);
         return;
     }
